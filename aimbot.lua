@@ -1,11 +1,3 @@
---[[
-    Aim v9 — Fast + Nearest + No FOV
-    ⚡ Smooth = 0.04 (5x أسرع)
-    🎯 الأقرب فقط (لا عشوائي)
-    👁️ أي شيء مرئي (لا حدود FOV)
-    🤖 NPCs + 👤 Players
---]]
-
 local ENV = (getgenv and getgenv()) or _G
 if ENV.__aimv9_cleanup then pcall(ENV.__aimv9_cleanup) end
 
@@ -16,8 +8,8 @@ local LP         = Players.LocalPlayer
 
 local CFG = {
     Active        = false,
-    Smooth        = 0.04,        -- ⚡ 5x أسرع
-    MaxDist       = 1500,        -- مدى أكبر
+    Smooth        = 0.04,        
+    MaxDist       = 1500,        
     BodyChance    = 56.79,
     HardLock      = false,
     PrioOffset    = 0,
@@ -27,9 +19,9 @@ local CFG = {
     NPCScanRange  = 800,
     RequireTool   = false,
     IgnoreTeam    = true,
-    Method        = "camera",    -- "camera" | "mouse"
+    Method        = "camera",    
 
-    RescanDelay   = 0.05,        -- إعادة اختيار أسرع
+    RescanDelay   = 0.05,        
     NPCScanDelay  = 0.3,
 }
 
